@@ -81,8 +81,10 @@
 
 .factbox-container {
   width: 100%;
-  height: 221px;
-  display: inline-flex
+  /* height: 221px; */
+  /* display: inline-flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .factbox-item {
@@ -131,6 +133,10 @@
     max-height: 300px;
     /* object-fit: cover; */
     /* transform: scale(0.5); */
+  }
+
+  .factbox-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
