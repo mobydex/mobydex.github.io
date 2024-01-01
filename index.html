@@ -39,10 +39,23 @@
     height: auto;
 }
 
+/* Differs from text-container only in word-wrap */
+.centered {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  word-break: normal;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 16px;
+}
+
 .text-container {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  word-break: normal;
 
   /* box-sizing: border-box; */
   justify-content: center;
@@ -69,8 +82,9 @@
   margin: 0px;
   padding: 0;
 
-  /* display: flex; */
+  display: flex;
   width: 100%;
+  overflow: hidden;
 }
 
 .image-container > img {
@@ -141,6 +155,27 @@
   grid-column: 1 / -1
 }
 
+.main-menu {
+  float: right;
+  display: flex;
+  padding: 5px 40px;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
+  list-style-type: none;
+}
+
+.main-menu a {
+  color: #969696;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*
+.main-menu > li {
+}
+*/
 
 @media (max-width: 950px) {
   .grid-container {
@@ -197,6 +232,19 @@
   }
 }
 
+@media (max-width: 500px) {
+  .main-menu {
+    float: none;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 350px) {
+  .text-container {
+    word-break: break-all;
+  }
+}
+
 
 /*
 .heading {
@@ -248,6 +296,149 @@
 
 
 
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
 </style>
 </head>
 
@@ -255,36 +446,26 @@
 
 <div class="main">
 
-<div style="height: 94px; width: 100%; display: flex-box; background: white; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)">
-  <div style="width: 226px; height: 53px; left: 24px; top: 20px;">
-   <img src="assets/images/mobydex-logo.svg" />
-  </div>
-  <div style="justify-content: flex-end; align-items: flex-start; gap: 20px; display: inline-flex">
-<!--    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">-->
-<!--      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Projektbeschreibung</div>-->
-<!--    </div>-->
-<!--    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">-->
-<!--      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Methoden</div>-->
-<!--    </div>-->
-<!--    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">-->
-<!--      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Ergebnisse</div>-->
-<!--    </div>-->
-<!--    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">-->
-<!--      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Kontakt</div>-->
-<!--    </div>-->
-  </div>
+<div style="width: 100%; display: flow-root; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)">
+<!--  <div style="display: inline;">-->
+  <img src="assets/images/mobydex-logo.svg" />
+<!--  </div>-->
+  <ul class="main-menu">
+    <li><a href="#description">Projektbeschreibung</a></li>
+    <li><a href="#methods">Methoden</a></li>
+    <li><a href="#results">Ergebnisse</a></li>
+    <li><a href="#contact">Kontakt</a></li>
+  </ul>
 </div>
 
-<div class="text-container borderless">
-  <div style="flex: 1">
-    <div>
+<div class="borderless" style="display: flex;">
+  <div style="flex: 1" class="centered">
       <div style="color: #224D73; font-size: 100px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">Moby Dex</div>
       <div style="color: #545454; font-size: 40px; font-weight: 300;">Die Zukunft der Mobilit&auml;t gestalten.</div>
-    </div>
   </div>
-  <div style="flex: 1">
-    <div class="text-container borderless" style="display: flex; align-items: center; height: 500px; overflow: hidden;">
-      <img style="object-fit: cover; height: 600px; width: 100%; border-radius: 50% 0 0 50% / 70%;" src="assets/images/mobydex0.png" />
+  <div style="flex: 1; overflow: hidden; display: flex; align-items: flex-start;">
+    <div class="text-container borderless" style="display: flex; align-items: center; height: 400px;">
+      <img style="flex-shrink: 0; height: 500px; width: 600px; border-radius: 50% 0 0 50% / 70%;" src="assets/images/mobydex0.png" />
     </div>
   </div>
 </div>
@@ -311,8 +492,6 @@
   <path d="M49.815 88.6338L73.075 99.7438C79.815 102.964 87.755 102.364 93.945 98.1738L135.405 68.3438C137.505 66.9238 138.075 64.0738 136.685 61.9538C135.345 59.9138 132.665 59.2638 130.545 60.4638L113.425 70.6338M76.905 82.8138L103.685 77.8438C106.125 77.3938 107.815 75.1338 107.555 72.6538C107.285 70.0538 104.985 68.1438 102.385 68.3738L90.615 69.5238C84.925 69.9838 79.245 68.5738 74.425 65.5138L72.965 64.5838C69.665 62.4938 65.845 61.3838 61.945 61.3838H49.335M104.495 29.8338C106.945 22.6738 105.275 14.4138 99.515 8.77375C91.545 0.953754 78.755 1.09375 70.965 9.09375C63.175 17.0938 63.305 29.9138 71.275 37.7338C77.965 44.2938 88.035 45.2538 95.715 40.6738M43.075 94.0138H39.305C36.035 94.0138 33.375 91.3638 33.375 88.0838V62.0638C33.375 58.7938 36.025 56.1338 39.305 56.1338H43.075C46.345 56.1338 49.005 58.7838 49.005 62.0638V88.0838C49.005 91.3538 46.355 94.0138 43.075 94.0138Z" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M83.465 29.5237C84.225 30.2437 85.295 30.6037 86.665 30.6037C87.375 30.6037 88.005 30.5037 88.575 30.3137C89.145 30.1237 89.775 29.8437 90.465 29.4837V31.4337C89.795 31.7637 89.135 32.0137 88.485 32.1937C87.835 32.3637 87.115 32.4537 86.315 32.4537C84.455 32.4537 82.945 31.9137 81.785 30.8337C80.625 29.7537 79.885 28.1837 79.565 26.1137H77.205L77.585 24.5637H79.485V22.0337H77.205L77.585 20.4837H79.595C80.015 18.4137 80.825 16.8137 82.055 15.6837C83.275 14.5537 84.735 13.9837 86.435 13.9837C88.135 13.9837 89.795 14.4637 91.295 15.4337L90.395 17.0037C89.705 16.5837 89.075 16.2837 88.505 16.1037C87.935 15.9237 87.275 15.8337 86.535 15.8337C85.395 15.8337 84.445 16.2137 83.675 16.9737C82.905 17.7337 82.355 18.9037 82.035 20.4837H89.065L88.685 22.0337H81.905V24.5637H88.175L87.825 26.1137H81.995C82.225 27.6737 82.725 28.8037 83.485 29.5237H83.465Z" fill="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-
-          <div style="width: 14.09px; height: 18.47px; left: 76.83px; top: 13.98px; position: absolute; background: white"></div>
         </div>
         <div style="align-self: stretch; text-align: center; color: white; font-size: 32px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">2.941.945 €</div>
         <div style="align-self: stretch; text-align: center; color: white; font-size: 20px; font-family: FiraGO; font-weight: 350; word-wrap: break-word">Gesamtf&ouml;rdersumme</div>
@@ -325,8 +504,6 @@
 <path d="M103.105 94.75H128.245C129.745 94.75 130.965 93.53 130.965 92.03C130.965 81.75 122.635 73.42 112.355 73.42H104.925C102.715 73.42 100.595 73.7999 98.635 74.5099M35.955 74.52C33.995 73.81 31.875 73.43 29.665 73.43H22.235C11.955 73.43 3.625 81.76 3.625 92.04C3.625 93.54 4.845 94.7599 6.345 94.7599H31.485M165.845 37.76C168.295 30.62 166.625 22.39 160.865 16.76C152.895 8.95995 140.105 9.09995 132.315 17.07C124.515 25.04 124.655 37.83 132.625 45.62C139.315 52.16 149.385 53.12 157.065 48.55M82.095 46.46C82.095 54.63 75.475 61.26 67.295 61.26C59.115 61.26 52.495 54.64 52.495 46.46C52.495 38.28 59.115 31.66 67.295 31.66C75.475 31.66 82.095 38.28 82.095 46.46ZM96.085 91.25C96.085 78 85.345 67.25 72.085 67.25H62.505C49.255 67.25 38.505 77.99 38.505 91.25C38.505 93.19 40.075 94.75 42.005 94.75H92.565C94.505 94.75 96.065 93.18 96.065 91.25H96.085ZM108.645 45.42C102.305 45.42 97.175 50.56 97.175 56.89C97.175 63.22 102.315 68.36 108.645 68.36C114.975 68.36 120.115 63.22 120.115 56.89C120.115 50.56 114.975 45.42 108.645 45.42ZM14.475 56.9C14.475 63.24 19.615 68.37 25.945 68.37C32.275 68.37 37.415 63.23 37.415 56.9C37.415 50.56 32.275 45.43 25.945 45.43C19.605 45.43 14.475 50.57 14.475 56.9Z" stroke="white" stroke-width="2.53" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M144.805 37.46C145.565 38.18 146.635 38.53 148.005 38.53C148.715 38.53 149.345 38.44 149.915 38.25C150.485 38.06 151.115 37.78 151.805 37.42V39.36C151.135 39.69 150.475 39.94 149.825 40.11C149.175 40.28 148.455 40.37 147.655 40.37C145.795 40.37 144.285 39.83 143.125 38.75C141.965 37.67 141.225 36.1 140.905 34.05H138.545L138.925 32.5H140.825V29.98H138.545L138.925 28.43H140.935C141.355 26.37 142.165 24.77 143.395 23.64C144.615 22.51 146.075 21.94 147.775 21.94C149.475 21.94 151.135 22.42 152.635 23.39L151.735 24.95C151.045 24.53 150.415 24.24 149.845 24.05C149.275 23.87 148.615 23.78 147.875 23.78C146.735 23.78 145.785 24.16 145.015 24.92C144.245 25.68 143.695 26.85 143.375 28.42H150.405L150.025 29.97H143.245V32.49H149.515L149.165 34.04H143.335C143.565 35.59 144.065 36.73 144.825 37.44L144.805 37.46Z" fill="white"/>
 </svg>
-
-          <div style="width: 14.09px; height: 18.43px; left: 137.92px; top: 21.94px; position: absolute; background: white"></div>
         </div>
         <div style="align-self: stretch; text-align: center; color: white; font-size: 32px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">69,4 %</div>
         <div style="align-self: stretch; text-align: center; color: white; font-size: 20px; font-family: FiraGO; font-weight: 350; word-wrap: break-word">Verbundf&ouml;rderquote</div>
@@ -349,7 +526,7 @@
 
 <div class="text-container">
 <!--  <div class="description-box" style="flex: 1">-->
-    <div class="section-heading">Kurzbeschreibung</div>
+    <div id="description" class="section-heading">Kurzbeschreibung</div>
     <p class="content">
 Moby Dex ist ein innovatives Forschungsprojekt, das einen Multimodalen Mobilit&auml;ts-Index entwickelt.
 Dieser Index stellt das Verh&auml;ltnis von Mobilit&auml;tsangebot und -nachfrage dar und verwendet unter anderem Mobilfunkdaten und Floating Car Data (FCD).
@@ -369,7 +546,7 @@ Das System wird in den Zielregionen Ruhrgebiet und Baden-W&uuml;rttemberg erprob
       <img src="assets/images/mobydex1.png" />
     </div>
 
-    <div class="text-container">
+    <div id="methods" class="text-container">
       <div>
         <div class="section-heading">Herausforderung und Innovation</div>
         <p class="two-column-content">
@@ -408,7 +585,7 @@ Designentwurf, Validierung und Projektmanagement sind ebenfalls zentrale Element
       <img src="assets/images/mobydex3.png" />
     </div>
 
-    <div class="text-container">
+    <div id="results" class="text-container">
       <div>
         <div class="section-heading">Unsere erwarteten Ergebnisse und weitergehenden Wirkungen</div>
         <p class="two-column-content">
@@ -452,7 +629,7 @@ Wir freuen uns darauf, unsere Erkenntnisse und Ergebnisse zu teilen und die Mobi
 <!--</div>-->
 
 <!--<div style="width: 1168px; height: 200px; position: relative; background: linear-gradient(92deg, #3E8CD2 0%, #3677AD 50%, #3E8BCA 100%)">-->
-<div class="text-container" style="margin: 0; align-items: center; display: flexbox; flex-direction: column; width: 100%; height: 200px; background: linear-gradient(92deg, #3E8CD2 0%, #3677AD 50%, #3E8BCA 100%)">
+<div id="contact" class="text-container" style="margin: 0; align-items: center; display: flexbox; flex-direction: column; width: 100%; height: 200px; background: linear-gradient(92deg, #3E8CD2 0%, #3677AD 50%, #3E8BCA 100%)">
 <!--  <div style="height: 134px; left: 280px; top: 31px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: center; gap: 17px; display: inline-flex">-->
 <!--    <div class="description-box">-->
     <div style="color: white; font-size: 36px; font-family: FiraGO; font-weight: 800; word-wrap: break-word; text-align: center;">Brauchen Sie weitere Informationen?</div>
