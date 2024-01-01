@@ -41,10 +41,15 @@
 
 .text-container {
   display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
   /* box-sizing: border-box; */
   justify-content: center;
   align-items: center;
-  margin: 16px;
+  /* margin: 16px; */
+  margin: 0px;
+  padding: 16px;
   /* margin: 0px; */
   /* padding: 16px; */
   /* height: auto; */
@@ -57,13 +62,23 @@
 }
 
 .image-container {
-  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0;
+
+  /* display: flex; */
   width: 100%;
 }
 
 .image-container > img {
+  box-sizing: border-box;
   width: 100%;
+  max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .section-heading {
@@ -76,7 +91,8 @@
 
 .description-box {
   padding: 0px;
-  margin: 50px;
+  /* margin: 50px; */
+  margin: auto;
 }
 
 .factbox-container {
@@ -98,7 +114,35 @@
   gap: 7px;
 }
 
-@media (max-width: 600px) {
+
+.partner-grid {
+  width: 100%;
+  padding: 16px;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.partner-grid > * {
+  align-items:  center;
+  justify-self: center;
+}
+
+.partner-grid > img {
+  width: 250px;
+  height: auto
+}
+
+.partner-grid > :last-child {
+  grid-column: 1 / -1
+}
+
+
+@media (max-width: 950px) {
   .grid-container {
       grid-template-columns: 1fr; /* One column */
   }
@@ -128,18 +172,30 @@
     grid-row: 6; /* Text 3 */
   }
 
+  .factbox-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .image-container > img {
     /* max-height: 50%; */
     max-height: 300px;
     /* object-fit: cover; */
     /* transform: scale(0.5); */
   }
+}
 
-  .factbox-container {
-    grid-template-columns: 1fr 1fr;
+
+@media (max-width: 1000px) {
+  .partner-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+@media (max-width: 600px) {
+  .partner-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 
 /*
@@ -204,18 +260,18 @@
    <img src="assets/images/mobydex-logo.svg" />
   </div>
   <div style="justify-content: flex-end; align-items: flex-start; gap: 20px; display: inline-flex">
-    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">
-      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Projektbeschreibung</div>
-    </div>
-    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">
-      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Methoden</div>
-    </div>
-    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">
-      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Ergebnisse</div>
-    </div>
-    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">
-      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Kontakt</div>
-    </div>
+<!--    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">-->
+<!--      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Projektbeschreibung</div>-->
+<!--    </div>-->
+<!--    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">-->
+<!--      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Methoden</div>-->
+<!--    </div>-->
+<!--    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">-->
+<!--      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Ergebnisse</div>-->
+<!--    </div>-->
+<!--    <div style="padding: 8px; justify-content: center; align-items: center; gap: 8px; display: flex">-->
+<!--      <div style="color: #969696; font-size: 14px; font-family: FiraGO; font-weight: 500; word-wrap: break-word">Kontakt</div>-->
+<!--    </div>-->
   </div>
 </div>
 
@@ -223,12 +279,12 @@
   <div style="flex: 1">
     <div>
       <div style="color: #224D73; font-size: 100px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">Moby Dex</div>
-      <div style="color: #545454; font-size: 40px; font-weight: 300;">Die Zukunft der Mobilität gestalten.</div>
+      <div style="color: #545454; font-size: 40px; font-weight: 300;">Die Zukunft der Mobilit&auml;t gestalten.</div>
     </div>
   </div>
   <div style="flex: 1">
-    <div class="text-container borderless" style="height: 500px; overflow: hidden;">
-      <img style="height: 600px; width: 100%; border-radius: 50% 0 0 50% / 70%;" src="assets/images/mobydex0.png" />
+    <div class="text-container borderless" style="display: flex; align-items: center; height: 500px; overflow: hidden;">
+      <img style="object-fit: cover; height: 600px; width: 100%; border-radius: 50% 0 0 50% / 70%;" src="assets/images/mobydex0.png" />
     </div>
   </div>
 </div>
@@ -259,7 +315,7 @@
           <div style="width: 14.09px; height: 18.47px; left: 76.83px; top: 13.98px; position: absolute; background: white"></div>
         </div>
         <div style="align-self: stretch; text-align: center; color: white; font-size: 32px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">2.941.945 €</div>
-        <div style="align-self: stretch; text-align: center; color: white; font-size: 20px; font-family: FiraGO; font-weight: 350; word-wrap: break-word">Gesamtfördersumme</div>
+        <div style="align-self: stretch; text-align: center; color: white; font-size: 20px; font-family: FiraGO; font-weight: 350; word-wrap: break-word">Gesamtf&ouml;rdersumme</div>
       </div>
 
       <div class="factbox-item" style="background: linear-gradient(77deg, #44AFE4 0%, #3F95D6 26%, #42A1DD 26%, #3E8CD2 100%);">
@@ -273,7 +329,7 @@
           <div style="width: 14.09px; height: 18.43px; left: 137.92px; top: 21.94px; position: absolute; background: white"></div>
         </div>
         <div style="align-self: stretch; text-align: center; color: white; font-size: 32px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">69,4 %</div>
-        <div style="align-self: stretch; text-align: center; color: white; font-size: 20px; font-family: FiraGO; font-weight: 350; word-wrap: break-word">Verbundförderquote</div>
+        <div style="align-self: stretch; text-align: center; color: white; font-size: 20px; font-family: FiraGO; font-weight: 350; word-wrap: break-word">Verbundf&ouml;rderquote</div>
       </div>
 
       <div class="factbox-item" style="background: linear-gradient(104deg, #45B3E7 0%, #5EABE7 85%, #6ABAE7 86%, #46B4E7 100%);">
@@ -292,15 +348,15 @@
 
 
 <div class="text-container">
-  <div class="description-box" style="flex: 1">
-    <div class="section-heading text-container">Kurzbeschreibung</div>
+<!--  <div class="description-box" style="flex: 1">-->
+    <div class="section-heading">Kurzbeschreibung</div>
     <p class="content">
-Moby Dex ist ein innovatives Forschungsprojekt, das einen Multimodalen Mobilitäts-Index entwickelt.
-Dieser Index stellt das Verhältnis von Mobilitätsangebot und -nachfrage dar und verwendet unter anderem Mobilfunkdaten und Floating Car Data (FCD).
-Moby Dex ermöglicht den bedarfsgerechten Ausbau nachhaltiger Mobilität in ganzen Regionen.
-Das System wird in den Zielregionen Ruhrgebiet und Baden-Württemberg erprobt.
+Moby Dex ist ein innovatives Forschungsprojekt, das einen Multimodalen Mobilit&auml;ts-Index entwickelt.
+Dieser Index stellt das Verh&auml;ltnis von Mobilit&auml;tsangebot und -nachfrage dar und verwendet unter anderem Mobilfunkdaten und Floating Car Data (FCD).
+Moby Dex erm&ouml;glicht den bedarfsgerechten Ausbau nachhaltiger Mobilit&auml;t in ganzen Regionen.
+Das System wird in den Zielregionen Ruhrgebiet und Baden-W&uuml;rttemberg erprobt.
     </p>
-  </div>
+<!--  </div>-->
 </div>
 
 
@@ -317,12 +373,12 @@ Das System wird in den Zielregionen Ruhrgebiet und Baden-Württemberg erprobt.
       <div>
         <div class="section-heading">Herausforderung und Innovation</div>
         <p class="two-column-content">
-Die herkömmliche Orientierung des öffentlichen Nahverkehrs an räumlichen Zuständigkeiten stößt an ihre Grenzen und behindert bedarfsgerechte Lösungen.
-Gleichzeitig führt das politisch geförderte betriebliche Mobilitätsmanagement zu isolierten Lösungen und Reibungsverlusten.
-Eine erfolgreiche Verkehrswende erfordert eine integrierte Ausrichtung der öffentlichen Mobilitätsplanung am tatsächlichen Bedarf.<br/><br/>
+Die herk&ouml;mmliche Orientierung des &ouml;ffentlichen Nahverkehrs an r&auml;umlichen Zust&auml;ndigkeiten st&ouml;&szlig;t an ihre Grenzen und behindert bedarfsgerechte L&ouml;sungen.
+Gleichzeitig f&uuml;hrt das politisch gef&ouml;rderte betriebliche Mobilit&auml;tsmanagement zu isolierten L&ouml;sungen und Reibungsverlusten.
+Eine erfolgreiche Verkehrswende erfordert eine integrierte Ausrichtung der &ouml;ffentlichen Mobilit&auml;tsplanung am tats&auml;chlichen Bedarf.<br/><br/>
 Moby Dex entwickelt eine umfassende Daten-, Verarbeitungs- und Kollaborationsplattform, die Angebot und Bedarf systematisch analysiert.
-Sie ermöglicht den regionalen öffentlichen und betrieblichen Mobilitätsplanern die gemeinsame Entwicklung bedarfsgerechter Lösungen.
-Die Plattform wird in zwei Pilotregionen für Standortbewertungen, globale Analysen und zukunftsweisende Mobilitätskonzepte angewendet.
+Sie erm&ouml;glicht den regionalen &ouml;ffentlichen und betrieblichen Mobilit&auml;tsplanern die gemeinsame Entwicklung bedarfsgerechter L&ouml;sungen.
+Die Plattform wird in zwei Pilotregionen f&uuml;r Standortbewertungen, globale Analysen und zukunftsweisende Mobilit&auml;tskonzepte angewendet.
         </p>
       </div>
     </div>
@@ -331,25 +387,25 @@ Die Plattform wird in zwei Pilotregionen für Standortbewertungen, globale Analy
   <div class="grid-row">
     <div class="text-container">
       <div>
-        <div class="section-heading">Unsere Durchführung und zentrale Aktivitäten</div>
+        <div class="section-heading">Unsere Durchf&uuml;hrung und zentrale Aktivit&auml;ten</div>
         <p class="two-column-content">
-Die Kernaktivitäten umfassen die Weiterentwicklung und Ergänzung der Angebotsanalyse,
-die Abschätzung des Bedarfs und die Identifizierung von Lücken mithilfe von Echtzeitdaten aus FCD und Mobilfunk in Verbindung mit Unternehmensdaten.
-Zusätzlich erfolgt die Integration der traditionellen öffentlichen Verkehrsplanung mit betrieblichem Mobilitätsmanagement.
+Die Kernaktivit&auml;ten umfassen die Weiterentwicklung und Erg&auml;nzung der Angebotsanalyse,
+die Absch&auml;tzung des Bedarfs und die Identifizierung von L&uuml;cken mithilfe von Echtzeitdaten aus FCD und Mobilfunk in Verbindung mit Unternehmensdaten.
+Zus&auml;tzlich erfolgt die Integration der traditionellen &ouml;ffentlichen Verkehrsplanung mit betrieblichem Mobilit&auml;tsmanagement.
 Designentwurf, Validierung und Projektmanagement sind ebenfalls zentrale Elemente.
         </p>
       </div>
     </div>
 
     <div class="image-container">
-      <img class="image" src="assets/images/mobydex2.png" width="100%" height="100%" />
+      <img class="image" src="assets/images/mobydex2.png" />
     </div>
   </div>
 
 
   <div class="grid-row">
     <div class="image-container">
-      <img src="assets/images/mobydex3.png" width="100%" height="100%" />
+      <img src="assets/images/mobydex3.png" />
     </div>
 
     <div class="text-container">
@@ -357,7 +413,7 @@ Designentwurf, Validierung und Projektmanagement sind ebenfalls zentrale Element
         <div class="section-heading">Unsere erwarteten Ergebnisse und weitergehenden Wirkungen</div>
         <p class="two-column-content">
 Das Hauptergebnis ist eine prototypische Plattform mit benutzerfreundlichen Schnittstellen zur Analyse und APIs zur Integration in Drittsysteme.
-Diese Plattform kann eigenständig oder aus spezialisierten Anwendungen und Portalen heraus genutzt werden.
+Diese Plattform kann eigenst&auml;ndig oder aus spezialisierten Anwendungen und Portalen heraus genutzt werden.
 Die Pilotierung erfolgt in zwei Regionen mit eingebundenen Partnern, und das Projekt liefert spezifische Studien und Anwendungen.
         </p>
       </div>
@@ -369,14 +425,14 @@ Die Pilotierung erfolgt in zwei Regionen mit eingebundenen Partnern, und das Pro
     <div class="text-container">
       <div style="width: 355px; height: 124px; padding-top: 8px; padding-bottom: 8px; padding-left: 30px; padding-right: 20px; border-left: 7px #224D73 solid; justify-content: center; align-items: center; gap: 8px; display: flex">
         <div style="flex: 1 1 0; color: #3F3F3F; font-size: 20px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">
-Moby Dex ist der Schlüssel zur Transformation der Mobilität in Regionen und zur Schaffung bedarfsgerechter Lösungen für die Zukunft.</div>
+Moby Dex ist der Schl&uuml;ssel zur Transformation der Mobilit&auml;t in Regionen und zur Schaffung bedarfsgerechter L&ouml;sungen f&uuml;r die Zukunft.</div>
       </div>
       </div>
     <div class="text-container">
 
       <div style="width: 355px; height: 124px; padding-top: 8px; padding-bottom: 8px; padding-left: 30px; padding-right: 20px; border-left: 7px #224D73 solid; justify-content: center; align-items: center; gap: 8px; display: flex">
         <div style="flex: 1 1 0; color: #3F3F3F; font-size: 20px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">
-Wir freuen uns darauf, unsere Erkenntnisse und Ergebnisse zu teilen und die Mobilität in den Zielregionen nachhaltig zu gestalten.</div>
+Wir freuen uns darauf, unsere Erkenntnisse und Ergebnisse zu teilen und die Mobilit&auml;t in den Zielregionen nachhaltig zu gestalten.</div>
       </div>
   </div>
   </div>
@@ -387,27 +443,43 @@ Wir freuen uns darauf, unsere Erkenntnisse und Ergebnisse zu teilen und die Mobi
 <!--<div style="width: 1168px; height: 273px; position: relative">-->
 <!--  <div style="left: 168px; top: 75px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 122px; display: inline-flex">-->
 <!--    <div style="width: 355px; height: 124px; padding-top: 8px; padding-bottom: 8px; padding-left: 30px; padding-right: 20px; border-left: 7px #224D73 solid; justify-content: center; align-items: center; gap: 8px; display: flex">-->
-<!--      <div style="flex: 1 1 0; color: #3F3F3F; font-size: 20px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">Moby Dex ist der Schlüssel zur Transformation der Mobilität in Regionen und zur Schaffung bedarfsgerechter Lösungen für die Zukunft.</div>-->
+<!--      <div style="flex: 1 1 0; color: #3F3F3F; font-size: 20px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">Moby Dex ist der Schl&uuml;ssel zur Transformation der Mobilit&auml;t in Regionen und zur Schaffung bedarfsgerechter L&ouml;sungen f&uuml;r die Zukunft.</div>-->
 <!--    </div>-->
 <!--    <div style="width: 355px; height: 124px; padding-top: 8px; padding-bottom: 8px; padding-left: 30px; padding-right: 20px; border-left: 7px #224D73 solid; justify-content: center; align-items: center; gap: 8px; display: flex">-->
-<!--      <div style="flex: 1 1 0; color: #3F3F3F; font-size: 20px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">Wir freuen uns darauf, unsere Erkenntnisse und Ergebnisse zu teilen und die Mobilität in den Zielregionen nachhaltig zu gestalten.</div>-->
+<!--      <div style="flex: 1 1 0; color: #3F3F3F; font-size: 20px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">Wir freuen uns darauf, unsere Erkenntnisse und Ergebnisse zu teilen und die Mobilit&auml;t in den Zielregionen nachhaltig zu gestalten.</div>-->
 <!--    </div>-->
 <!--  </div>-->
 <!--</div>-->
 
 <!--<div style="width: 1168px; height: 200px; position: relative; background: linear-gradient(92deg, #3E8CD2 0%, #3677AD 50%, #3E8BCA 100%)">-->
-<div class="text-container" style="margin: 0; display: flexbox; flex-direction: column; width: 100%; height: 200px; background: linear-gradient(92deg, #3E8CD2 0%, #3677AD 50%, #3E8BCA 100%)">
+<div class="text-container" style="margin: 0; align-items: center; display: flexbox; flex-direction: column; width: 100%; height: 200px; background: linear-gradient(92deg, #3E8CD2 0%, #3677AD 50%, #3E8BCA 100%)">
 <!--  <div style="height: 134px; left: 280px; top: 31px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: center; gap: 17px; display: inline-flex">-->
 <!--    <div class="description-box">-->
-    <div style="color: white; font-size: 36px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">Brauchen Sie weitere Informationen?</div>
+    <div style="color: white; font-size: 36px; font-family: FiraGO; font-weight: 800; word-wrap: break-word; text-align: center;">Brauchen Sie weitere Informationen?</div>
     <div style="color: white; font-size: 20px; font-family: FiraGO; font-weight: 400; word-wrap: break-word">Kontaktieren Sie uns</div>
     <div style="width: 114px; padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; border-radius: 20px; border: 1px #6ABAE7 solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
       <div style="text-align: center; color: #A7D8F4; font-size: 14px; font-family: FiraGO; font-weight: 400; word-wrap: break-word">Anschreiben</div>
     </div>
   </div>
 
+
+<div class="text-container" style="justify-content: center;">
+  <div class="section-heading">Kooperationspartner</div>
+</div>
+<div class="partner-grid">
+  <img src="assets/images/partners/ciss_logo.svg" />
+  <img src="assets/images/partners/CAS_Merlin_logo 1.svg" />
+  <img src="assets/images/partners/logo_yellowmap_4c.svg" />
+  <img src="assets/images/partners/ui-noborder.png" style="width: 150px; height: auto" />
+  <img src="assets/images/partners/locoslab_logo 1.png" />
+  <img src="assets/images/partners/Universität_Leipzig_Logo 1.png" />
+  <img src="assets/images/partners/Universität_Duisburg-Essen_logo 1.svg" />
 </div>
 
+<!-- Footer -->
+<div style="height: 235; background: linear-gradient(92deg, #2F3135 0.17%, #404248 53.21%, #38393D 100%);"></div>
+
+</div>
 
 <!--
 
@@ -447,7 +519,7 @@ Wir freuen uns darauf, unsere Erkenntnisse und Ergebnisse zu teilen und die Mobi
           <div style="width: 14.09px; height: 18.47px; left: 76.83px; top: 13.98px; position: absolute; background: white"></div>
         </div>
         <div style="align-self: stretch; text-align: center; color: white; font-size: 32px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">2.941.945 €</div>
-        <div style="align-self: stretch; text-align: center; color: white; font-size: 20px; font-family: FiraGO; font-weight: 350; word-wrap: break-word">Gesamtfördersumme</div>
+        <div style="align-self: stretch; text-align: center; color: white; font-size: 20px; font-family: FiraGO; font-weight: 350; word-wrap: break-word">Gesamtf&ouml;rdersumme</div>
       </div>
       <div style="flex: 1 1 0; height: 221px; padding-top: 20px; padding-bottom: 20px; background: linear-gradient(77deg, #44AFE4 0%, #3F95D6 26%, #42A1DD 26%, #3E8CD2 100%); flex-direction: column; justify-content: flex-start; align-items: center; gap: 7px; display: inline-flex">
         <div style="width: 170px; height: 105px; position: relative">
@@ -455,7 +527,7 @@ Wir freuen uns darauf, unsere Erkenntnisse und Ergebnisse zu teilen und die Mobi
           <div style="width: 14.09px; height: 18.43px; left: 137.92px; top: 21.94px; position: absolute; background: white"></div>
         </div>
         <div style="align-self: stretch; text-align: center; color: white; font-size: 32px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">69,4 %</div>
-        <div style="align-self: stretch; text-align: center; color: white; font-size: 20px; font-family: FiraGO; font-weight: 350; word-wrap: break-word">Verbundförderquote</div>
+        <div style="align-self: stretch; text-align: center; color: white; font-size: 20px; font-family: FiraGO; font-weight: 350; word-wrap: break-word">Verbundf&ouml;rderquote</div>
       </div>
       <div style="flex: 1 1 0; height: 221px; padding-top: 20px; padding-bottom: 20px; background: linear-gradient(104deg, #45B3E7 0%, #5EABE7 85%, #6ABAE7 86%, #46B4E7 100%); flex-direction: column; justify-content: flex-start; align-items: center; gap: 7px; display: inline-flex">
         <div style="width: 170px; height: 105px; position: relative">
