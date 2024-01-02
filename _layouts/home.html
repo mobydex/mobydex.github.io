@@ -8,23 +8,34 @@ layout: default
       <a href="{{ "/feed.xml" | relative_url }}"><span style="background-color: orange; height: 24px; border-radius: 8px;"><img src="/assets/images/rss.svg" style="padding-left: 4px; padding-right: 4px; height: 18px; width: auto;"></span></a>
       {{ page.list_title | default: "Posts" }}
     </h2>
-    <ul class="post-list">
+    <div class="post-list">
       {%- for post in site.posts -%}
-      <li>
+      <div>
         {%- assign date_format = site.minima.date_format | default: "%Y-%m-%d" -%}
-        <span class="post-meta"></span>
-        <h3>
-          {{ post.date | date: date_format }}:
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
+        <div style="display: flex; flex-direction: row;">
+          <div>
+            {%- assign page_icon = post.icon | default: "newspaper" -%}
+              <img class="post-icon" src="/assets/images/news/{{ page_icon }}.svg" style="width: 70px; height: 70px; padding: 10px;">
+          </div>
+          <div>
+            <h3>
+              {{ post.date | date: date_format }}:
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }} 
+              <a class="post-link" href="{{ post.url | relative_url }}" style="font-size: small;">
+                Weiterlesen ...
+              </a>
+            {%- endif -%}
+          </div>
+        </div>
+
+      </div>
       {%- endfor -%}
-    </ul>
+    </div>
   {%- endif -%}
 
 </div>

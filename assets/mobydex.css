@@ -11,6 +11,28 @@
   padding: 16px;
 }
 
+a.post-link {
+  text-decoration: none;
+  color: #3677AD;
+  font-weight: bold;
+}
+
+.post-icon {
+  filter: invert(46%) sepia(10%) saturate(3019%) hue-rotate(166deg) brightness(88%) contrast(86%);
+}
+
+.footer-item {
+  width: 100px;
+  padding: 5px;
+}
+
+.footer-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  line-height: 1.15;
+}
+
 .body {
   width: 100%;
   /* display: grid; */

@@ -1,13 +1,19 @@
-
-.site-nav {
-    position: static;
-    float: right;
-    line-height: 25px;
+  .site-nav {
+      position: static;
+      float: none;
+      line-height: 40px;
+      text-align: right;
+      z-index: 0;
+      top: 0px;
+      right: 0px;
   }
+
   .site-nav .nav-trigger {
+    clear: both;
     display: none;
   }
   .site-nav .menu-icon {
+    clear: both;
     display: none;
   }
   .site-nav .page-link {
@@ -20,13 +26,14 @@
   .site-nav .page-link:not(:last-child) {
     margin-right: 20px;
   }
+  
   ul.main-menu {
     position: static;
     display: inline-flex;
     max-width: unset;
-    z-index: unset;
+    z-index: inherit;
   }
-  
+
   @media screen and (max-width: 900px) {
     .site-nav {
       position: absolute;
@@ -36,10 +43,11 @@
       border: 1px solid #e8e8e8;
       border-radius: 5px;
       text-align: center;
-      z-index: 500;
+      z-index: 500;*/
     }
+    
+
     .site-nav label[for=nav-trigger] {
-      display: block;
       float: right;
       width: 36px;
       height: 36px;
@@ -58,6 +66,7 @@
     .site-nav .menu-icon > svg {
       fill: #424242;
     }
+
     .site-nav input ~ .trigger {
       clear: both;
       display: none;

@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Neues
-list_title: Neues
+title: Neuigkeiten
+list_title: Neuigkeiten
 ---
