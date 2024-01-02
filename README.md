@@ -1,5 +1,5 @@
 
 Draft
 
-https://moin-project.github.io/mobydex-website/
+https://mobydex.github.io
 
