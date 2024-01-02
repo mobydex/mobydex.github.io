@@ -86,6 +86,8 @@
 
 .image-container > img {
   box-sizing: border-box;
+  /** Scale images to a bit more than half of the two column grid */
+  width: 700px;
 /*  width: 100%;*/
 /*  max-width: 100%;*/
   height: auto;
