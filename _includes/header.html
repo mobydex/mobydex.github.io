@@ -34,7 +34,7 @@
       for(var i = 0; i < links.length; i++) {
         links[i].addEventListener('click', function() {
           document.getElementById('nav-trigger').checked = false;
-          setTimeout(()=> { document.body.scrollTop = 0; }, 1);
+          setTimeout(()=> { window.scrollTo(0,0); }, 10);
         });
       }
     </script>
