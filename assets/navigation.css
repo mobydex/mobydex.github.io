@@ -24,14 +24,15 @@
       background-color: #fdfdfd;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
-      text-align: right;
+      text-align: center;
+      z-index: 500;
     }
     .site-nav label[for=nav-trigger] {
       display: block;
       float: right;
       width: 36px;
       height: 36px;
-      z-index: 2;
+      z-index: 501;
       cursor: pointer;
     }
     .site-nav .menu-icon {
@@ -62,4 +63,11 @@
     .site-nav .page-link:not(:last-child) {
       margin-right: 0;
     }
+    ul.main-menu {
+      position: relative;
+      display: block;
+      max-width: 180px;
+      z-index: 502;
+    }
+
   }

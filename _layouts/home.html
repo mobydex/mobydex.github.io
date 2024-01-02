@@ -4,7 +4,10 @@ layout: default
 
 <div class="home" style="padding: 16px;">
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }} (<a href="{{ "/feed.xml" | relative_url }}">RSS</a>)</h2>
+    <h2 class="post-list-heading">
+      <a href="{{ "/feed.xml" | relative_url }}"><span style="background-color: orange; height: 24px; border-radius: 8px;"><img src="/assets/images/rss.svg" style="padding-left: 4px; padding-right: 4px; height: 18px; width: auto;"></span></a>
+      {{ page.list_title | default: "Posts" }}
+    </h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>

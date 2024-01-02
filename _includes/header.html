@@ -14,20 +14,29 @@
 
     <div class="trigger">
       <ul class="main-menu">
-        <li><a href="{{ "/#description" | relative_url }}">Projektbeschreibung</a></li>
-        <li><a href="{{ "/#methods" | relative_url }}">Methoden</a></li>
-        <li><a href="{{ "/#results" | relative_url }}">Ergebnisse</a></li>
+        <li><a class="page-link" href="{{ "/#description" | relative_url }}">Projektbeschreibung</a></li>
+        <li><a class="page-link" href="{{ "/#methods" | relative_url }}">Methoden</a></li>
+        <li><a class="page-link" href="{{ "/#results" | relative_url }}">Ergebnisse</a></li>
         {%- assign default_paths = site.pages | map: "path" -%}
         {%- assign page_paths = site.header_pages | default: default_paths -%}
         {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title and my_page.title != "" -%}
-          <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+          <li><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
           {%- endif -%}
         {%- endfor -%}
-        <li><a href="{{ "/#contact" | relative_url }}">Kontakt</a></li>
+        <li><a class="page-link" href="{{ "/#contact" | relative_url }}">Kontakt</a></li>
       </ul>
     </div>
+    <script>
+      var links = document.querySelectorAll('.main-menu li a');
+      for(var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() {
+          document.getElementById('nav-trigger').checked = false;
+        });
+      }
+    </script>
+
   </nav>
 </div>
