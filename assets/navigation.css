@@ -1,5 +1,6 @@
 
 .site-nav {
+    position: static;
     float: right;
     line-height: 25px;
   }
@@ -10,12 +11,22 @@
     display: none;
   }
   .site-nav .page-link {
-    color: #111;
+    color: #969696;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
     line-height: 1.5;
   }
   .site-nav .page-link:not(:last-child) {
     margin-right: 20px;
   }
+  ul.main-menu {
+    position: static;
+    display: inline-flex;
+    max-width: unset;
+    z-index: unset;
+  }
+  
   @media screen and (max-width: 900px) {
     .site-nav {
       position: absolute;
