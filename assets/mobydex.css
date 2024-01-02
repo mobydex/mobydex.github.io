@@ -145,7 +145,7 @@
 
 .factbox-container > * {
   flex: 1;
-  padding: 20 0;
+  padding: 8px 0px;
   display: inline-flex;
   align-items: center;
   flex-direction: column;
