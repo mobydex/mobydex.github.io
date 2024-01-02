@@ -117,7 +117,8 @@
   /* height: 221px; */
   /* display: inline-flex; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
 }
 
 .factbox-item {
@@ -521,7 +522,7 @@
 
 <div class="text-container">
   <div id="description" class="section-heading">Kurzbeschreibung</div>
-  <p class="content">
+  <p class="content" style="max-width: 750px;">
 Moby Dex ist ein innovatives Forschungsprojekt, das einen Multimodalen Mobilit&auml;ts-Index entwickelt.
 Dieser Index stellt das Verh&auml;ltnis von Mobilit&auml;tsangebot und -nachfrage dar und verwendet unter anderem Mobilfunkdaten und Floating Car Data (FCD).
 Moby Dex erm&ouml;glicht den bedarfsgerechten Ausbau nachhaltiger Mobilit&auml;t in ganzen Regionen.
@@ -590,14 +591,13 @@ Die Pilotierung erfolgt in zwei Regionen mit eingebundenen Partnern, und das Pro
   <div class="grid-row">
 <!--    <div style="left: 168px; top: 75px; position: absolute; justify-content: flex-start; align-items: flex-start; gap: 122px; display: inline-flex">-->
     <div class="text-container">
-      <div style="width: 355px; height: 124px; padding-top: 8px; padding-bottom: 8px; padding-left: 30px; padding-right: 20px; border-left: 7px #224D73 solid; justify-content: center; align-items: center; gap: 8px; display: flex">
+      <div style="max-width: 355px; padding-top: 8px; padding-bottom: 8px; padding-left: 30px; padding-right: 20px; border-left: 7px #224D73 solid; justify-content: center; align-items: center; gap: 8px; display: flex">
         <div style="flex: 1 1 0; color: #3F3F3F; font-size: 20px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">
 Moby Dex ist der Schl&uuml;ssel zur Transformation der Mobilit&auml;t in Regionen und zur Schaffung bedarfsgerechter L&ouml;sungen f&uuml;r die Zukunft.</div>
       </div>
       </div>
     <div class="text-container">
-
-      <div style="width: 355px; height: 124px; padding-top: 8px; padding-bottom: 8px; padding-left: 30px; padding-right: 20px; border-left: 7px #224D73 solid; justify-content: center; align-items: center; gap: 8px; display: flex">
+      <div style="max-width: 355px; padding-top: 8px; padding-bottom: 8px; padding-left: 30px; padding-right: 20px; border-left: 7px #224D73 solid; justify-content: center; align-items: center; gap: 8px; display: flex">
         <div style="flex: 1 1 0; color: #3F3F3F; font-size: 20px; font-family: FiraGO; font-weight: 800; word-wrap: break-word">
 Wir freuen uns darauf, unsere Erkenntnisse und Ergebnisse zu teilen und die Mobilit&auml;t in den Zielregionen nachhaltig zu gestalten.</div>
       </div>
@@ -609,7 +609,7 @@ Wir freuen uns darauf, unsere Erkenntnisse und Ergebnisse zu teilen und die Mobi
   <div style="color: white; font-size: 36px; font-family: FiraGO; font-weight: 800; word-wrap: break-word; text-align: center;">Brauchen Sie weitere Informationen?</div>
   <div style="color: white; font-size: 20px; font-family: FiraGO; font-weight: 400; word-wrap: break-word">Kontaktieren Sie uns</div>
   <div style="width: 114px; padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; border-radius: 20px; border: 1px #6ABAE7 solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
-    <div style="text-align: center; color: #A7D8F4; font-size: 14px; font-family: FiraGO; font-weight: 400; word-wrap: break-word">Anschreiben</div>
+    <a href="mailto:johndoe@example.org?subject=Meine%20Anfrage%20betreffend%20MobyDex" style="text-decoration: none; text-align: center; color: #A7D8F4; font-size: 14px; font-family: FiraGO; font-weight: 400; word-wrap: break-word">Anschreiben</a>
   </div>
 </div>
 
