@@ -165,7 +165,7 @@ Wir freuen uns darauf, unsere Erkenntnisse und Ergebnisse zu teilen und die Mobi
   <div style="color: white; font-size: 36px; font-family: 'Fira Sans'; font-weight: 800; word-wrap: break-word; text-align: center;">Brauchen Sie weitere Informationen?</div>
   <div style="color: white; font-size: 20px; font-family: 'Fira Sans'; font-weight: 400; word-wrap: break-word">Kontaktieren Sie uns</div>
   <div style="width: 114px; padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; border-radius: 20px; border: 1px #6ABAE7 solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
-    <a href="mailto:johndoe@example.org?subject=Meine%20Anfrage%20betreffend%20MobyDex" style="text-decoration: none; text-align: center; color: #A7D8F4; font-size: 14px; font-family: 'Fira Sans'; font-weight: 400; word-wrap: break-word">Anschreiben</a>
+    <a href="mailto:mobydex@locoslab.com?subject=Anfrage%20zu%20MobyDex" style="text-decoration: none; text-align: center; color: #A7D8F4; font-size: 14px; font-family: 'Fira Sans'; font-weight: 400; word-wrap: break-word">Anschreiben</a>
   </div>
 </div>
 

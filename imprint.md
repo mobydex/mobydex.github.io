@@ -5,7 +5,27 @@ title: ''
 
 # Impressum
 
-**TODO: Verantwortlicher und Kontakt bei CAS**
+Ansprechpartner für diese Webseite ist:
+
+```
+CAS Software AG
+Preslava Kathova
+
+CAS-Weg 1 – 5 
+76131 Karlsruhe, Germany 
+
+Phone: +49 721-9638-0
+```
+
+## Haftung für Inhalte
+
+Die Inhalte der Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen.
+
+Als Diensteanbieter sind wir gemäß § 7 Abs. 1 Telemediengesetz (TMG) für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8-10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei dem Bekanntwerden von entsprechenden Rechtsverletzungen werden die Inhalte umgehend entfernt.
+
+## Haftung für Links
+
+Diese Webseite enthält Verknüpfungen zu Webseiten Dritter („externe Links“). Diese Webseiten unterliegen der Haftung der jeweiligen Betreiber, so dass die Universität Duisburg-Essen für diese fremden Inhalte keine Gewähr übernimmt. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar, so dass sich die Universität Duisburg-Essen hiermit ausdrücklich von allen Inhalten der gelinkten/verknüpften Seiten, die nach der Linksetzung verändert wurden, distanziert. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcher Art dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung verweist.
 
 ## Datenschutzerklärung
 
@@ -13,7 +33,15 @@ Im Folgenden erklären wir, wie personenbezogene Daten von uns verarbeitet werde
 
 Verantwortlicher im Sinne der Datenschutzgrundverordnung ist:
 
-**TODO: Verantwortliche und Kontakt bei CAS**
+```
+CAS Software AG
+Preslava Kathova
+
+CAS-Weg 1 – 5 
+76131 Karlsruhe, Germany 
+
+Phone: +49 721-9638-0
+```
 
 ### GitHub Pages
 
@@ -44,4 +72,8 @@ Die Daten werden gelöscht, sobald der Zweck der Verarbeitung entfällt.
 
 Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Die Funktionsfähigkeit der Website ist ohne die Verarbeitung nicht gewährleistet.
 
-GitHub hat Compliance-Maßnahmen für internationale Datenübermittlungen umgesetzt. Diese gelten für alle weltweiten Aktivitäten, bei denen GitHub personenbezogene Daten von natürlichen Personen in der EU verarbeitet. Diese Maßnahmen basieren auf den EU-Standardvertragsklauseln (SCCs). Weitere Informationen finden Sie unter: [https://www.bfdi.bund.de](https://www.bfdi.bund.de/DE/Service/Anschriften/anschriften_table.html)
+GitHub hat Compliance-Maßnahmen für internationale Datenübermittlungen umgesetzt. Diese gelten für alle weltweiten Aktivitäten, bei denen GitHub personenbezogene Daten von natürlichen Personen in der EU verarbeitet. Diese Maßnahmen basieren auf den EU-Standardvertragsklauseln (SCCs). 
+
+### Informationen zur Online-Streitbeilegung
+
+Die EU-Kommission stellt gemäß Art. 14 Abs. 1 ODR-VO (EU-Verordnung Nr. 524/2013) eine Internetplattform zur Online-Beilegung von Streitigkeiten (sog. „OS-Plattform“) bereit. Die OS-Plattform dient als Anlaufstelle zur außergerichtlichen Beilegung von Streitigkeiten, welche vertragliche Verpflichtungen, die aus Online-Kaufverträgen erwachsen, betreffen. Der Kunde kann die OS-Plattform unter folgendem Link erreichen: http://ec.europa.eu/consumers/odr/
