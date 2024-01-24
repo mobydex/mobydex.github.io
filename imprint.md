@@ -9,7 +9,7 @@ Ansprechpartner für diese Webseite ist:
 
 ```
 CAS Software AG
-Preslava Kathova
+Preslava Krathova
 
 CAS-Weg 1 – 5 
 76131 Karlsruhe, Germany 
@@ -35,7 +35,7 @@ Verantwortlicher im Sinne der Datenschutzgrundverordnung ist:
 
 ```
 CAS Software AG
-Preslava Kathova
+Preslava Krahtova
 
 CAS-Weg 1 – 5 
 76131 Karlsruhe, Germany 
