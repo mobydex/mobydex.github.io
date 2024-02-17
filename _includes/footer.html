@@ -1,12 +1,30 @@
-<div class="footer" style="display: flex; flex-direction: column; align-items: end; padding: 16px; height: 200px; background: linear-gradient(92deg, #2F3135 0.17%, #404248 53.21%, #38393D 100%);">
-    <div class="footer-item">
-        <a href="{{ "/imprint" | relative_url}}">Impressum</a>
+<div class="footer" style="display: flex; justify-content: space-between; padding: 16px; height: 200px; background: linear-gradient(92deg, #ffffff 0.25%, #404248 63.21%, #38393D 100%);">
+
+    <div style="display: flex; gap: 10px">
+        <div style="display: flex; flex-direction: column;">
+            <p>Gefördert durch</p>
+            <a href="https://bmdv.bund.de/">
+                <img src="{{ "/assets/images/bmdv-logo.svg" | relative_url  }}" alt="BMDV" width="220px">
+            </a>
+        </div>
+        
+        <div style="display: flex; flex-direction: column;">
+            <p>Im Programm</p>
+            <a href="https://bmdv.bund.de/DE/Themen/Digitales/mFund/Ueberblick/ueberblick.html">
+                <img style="margin-top: 25px;" src="{{ "/assets/images/mfund-logo.svg" | relative_url  }}" alt="mFund" width="200px">
+            </a>
+        </div>
     </div>
-    <div class="footer-item">
-        <a href="{{ "/#contact" | relative_url}}">Kontakt</a>
-    </div>
-    <div class="footer-item">
-        <a href="https://github.com/mobydex/mobydex.github.io/tree/main">GitHub</a>
+    <div style="display: flex; flex-direction: column;">
+        <div class="footer-item">
+            <a href="{{ "/imprint" | relative_url}}">Impressum</a>
+        </div>
+        <div class="footer-item">
+            <a href="{{ "/#contact" | relative_url}}">Kontakt</a>
+        </div>
+        <div class="footer-item">
+            <a href="https://github.com/mobydex/mobydex.github.io/tree/main">GitHub</a>
+        </div>
     </div>
 </div>
-  
+

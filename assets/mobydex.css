@@ -11,7 +11,7 @@
   padding: 16px;
 }
 
-a.post-link {
+a.post-link, .post-content a {
   text-decoration: none;
   color: #3677AD;
   font-weight: bold;
