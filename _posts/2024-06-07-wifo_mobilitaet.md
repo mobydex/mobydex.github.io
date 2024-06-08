@@ -3,7 +3,7 @@ layout: post
 title:  "Wissenschaftsforum Mobilität in Duisburg"
 date:   2024-06-07 13:00:00 +0100
 categories: news
-excerpt: "Am kommenden Donnerstag findet das jährliche Wissenschaftsforum Mobilität in Duisburg statt und wir sind dabei."
+excerpt: "Am kommenden Donnerstag findet das jährliche Wissenschaftsforum Mobilität in Duisburg statt und wir sind mit dabei."
 icon: campaign
 ---
 
