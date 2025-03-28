@@ -1,5 +1,1 @@
-
-Draft
-
-https://mobydex.github.io
-
+This repository contains the contents of the [MobyDex homepage](https://mobydex.org).
