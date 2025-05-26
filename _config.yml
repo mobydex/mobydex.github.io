@@ -22,7 +22,7 @@ title: Moby Dex
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Moby Dex.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
@@ -37,7 +37,12 @@ show_excerpts: true
 minima:
   date_format: "%Y-%m-%d"
   
-
+defaults:
+- scope:
+    path: '_posts/en'
+  values:
+    permalink: 'en/:categories/:year/:month/:day/:title:output_ext'
+    language: en
 
 # Exclude from processing.
 # The following items will not be processed, by default.

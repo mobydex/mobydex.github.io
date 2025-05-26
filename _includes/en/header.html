@@ -1,7 +1,7 @@
 
 <div style="width: 100%; display: flex; flex-direction: row; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15)">
   <div style="flex-grow: 1;">
-    <a href="{{ "/" | relative_url }}">
+    <a href="{{ "/en" | relative_url }}">
       <img style="margin: 16px;" src="{{ "assets/images/mobydex-logo.svg" | relative_url" }}" />
     </a>
   </div>
@@ -18,23 +18,23 @@
 
       <div class="trigger">
         <ul class="main-menu">
-          <li><a class="page-link" href="{{ "/#description" | relative_url }}">Projektbeschreibung</a></li>
-          <li><a class="page-link" href="{{ "/#methods" | relative_url }}">Methoden</a></li>
-          <li><a class="page-link" href="{{ "/#results" | relative_url }}">Ergebnisse</a></li>
+          <li><a class="page-link" href="{{ "/en/#description" | relative_url }}">Project description</a></li>
+          <li><a class="page-link" href="{{ "/en/#methods" | relative_url }}">Methods</a></li>
+          <li><a class="page-link" href="{{ "/en/#results" | relative_url }}">Results</a></li>
           {%- assign default_paths = site.pages | map: "path" -%}
           {%- assign page_paths = site.header_pages | default: default_paths -%}
           {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
           {%- for path in page_paths -%}
             {%- assign path_lang = path | split: '/' | first -%}
-            {%- if path_lang != "en" -%}
+            {%- if path_lang == "en" -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}
               {%- if my_page.title and my_page.title != "" -%}
               <li><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
               {%- endif -%}
             {%- endif -%}
           {%- endfor -%}
-          <li><a class="page-link" href="{{ "/#contact" | relative_url }}">Kontakt</a></li>
-          <li><a class="page-link" title="English" href="{{ "/en" | relative_url }}">🇬🇧</a></li>
+          <li><a class="page-link" href="{{ "/en/#contact" | relative_url }}">Contact us</a></li>
+          <li><a class="page-link" title="Deutsch" href="{{ "/" | relative_url }}">🇩🇪</a></li>
         </ul>
       </div>
       <script>
