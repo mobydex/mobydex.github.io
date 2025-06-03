@@ -9,12 +9,12 @@ The contact person for this website is:
 
 ```
 CAS Software AG
-Preslava Krathova
-
-CAS-Weg 1 – 5 
-76131 Karlsruhe, Germany 
-
-Phone: +49 721-9638-0
+Svetlana Dedova
+ 
+CAS-Weg 1-5
+76131 Karlsruhe, Germany
+ 
+Email: svetlana.dedova@cas.de
 ```
 
 ## Liability for content
@@ -37,12 +37,12 @@ The controller within the meaning of the General Data Protection Regulation is:
 
 ```
 CAS Software AG
-Preslava Krahtova
-
-CAS-Weg 1 – 5 
-76131 Karlsruhe, Germany 
-
-Phone: +49 721-9638-0
+Svetlana Dedova
+ 
+CAS-Weg 1-5
+76131 Karlsruhe, Germany
+ 
+Email: svetlana.dedova@cas.de
 ```
 
 ### GitHub Pages
