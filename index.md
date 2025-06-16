@@ -12,8 +12,8 @@ layout: default
 <div class="text-container" style="align-items: center; justify-content: center; display:flex; flex-direction: row;">
   <a href="https://www.uitpsummit.org/hamburg2025/"><img src="https://www.uitpsummit.org/hamburg2025/wp-content/uploads/sites/2/2024/12/uitp-summit-2025-logo.svg" style="width: 200px; margin: 10px;" /></a>
   <b>We präsentieren akuell am UITP Summit! (15-18 Juni 2025)</b>
-  <a href="https://mobydex.locoslab.com/" style="width: 114px; padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; border-radius: 20px; border: 1px #6ABAE7 solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex; margin: 10px; background: linear-gradient(92deg, #3E8CD2 0%, #3677AD 50%, #3E8BCA 100%);">
-    <p style="text-decoration: none; text-align: center; color: #A7D8F4; font-size: 14px; font-family: 'Fira Sans'; font-weight: 400; word-wrap: break-word; margin: 10px;"><b>DEMO</b></p>
+  <a href="https://mobydex.locoslab.com/" style="text-decoration: none; width: 114px; padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; border-radius: 20px; border: 1px #6ABAE7 solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex; margin: 10px; background: linear-gradient(92deg, #3E8CD2 0%, #3677AD 50%, #3E8BCA 100%);">
+    <p style="text-align: center; color: #A7D8F4; font-size: 14px; font-family: 'Fira Sans'; font-weight: 400; word-wrap: break-word; margin: 10px;"><b>DEMO</b></p>
   </a>
 </div>
 
