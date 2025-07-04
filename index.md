@@ -9,6 +9,7 @@ layout: default
   Headline Banner
 -->
 
+<!--
 <div class="text-container" style="align-items: center; justify-content: center; display:flex; flex-direction: row;">
   <a href="https://www.uitpsummit.org/hamburg2025/"><img src="https://www.uitpsummit.org/hamburg2025/wp-content/uploads/sites/2/2024/12/uitp-summit-2025-logo.svg" style="width: 200px; margin: 10px;" /></a>
   <b>Wir präsentieren aktuell am UITP Summit! (15-18 Juni 2025)</b>
@@ -16,6 +17,7 @@ layout: default
     <p style="text-align: center; color: #A7D8F4; font-size: 14px; font-family: 'Fira Sans'; font-weight: 400; word-wrap: break-word; margin: 10px;"><b>DEMO</b></p>
   </a>
 </div>
+-->
 
 <!--
   Title
