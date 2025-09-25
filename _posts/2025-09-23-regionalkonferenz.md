@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MobyDex auf der 8. Regionalkonferenz Mobilitätswende"
-date: 2025-09-23 00:00:00 +0100
+date: 2025-09-24 00:00:00 +0100
 categories: news
 excerpt: "Am 23. September 2025 fand die 8. Regionalkonferenz Mobilitätswende im Kongresszentrum Karlsruhe statt."
 icon: campaign
