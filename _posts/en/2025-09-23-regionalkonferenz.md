@@ -11,7 +11,7 @@ On September 23, 2025, the 8th Regional Mobility Transition Conference was held 
 
 In the expert forum “Smart Mobility – AI and Data as Drivers of the Future,” Richard Wacker from YellowMap gave a well-received presentation showcasing innovative approaches to using data and artificial intelligence in mobility planning.
 
-![MobyDex Presentation](/assets/images/regionalkonferenz.jpg){: height="320" style="display:block; margin-left:auto; margin-right:auto" }
+![MobyDex Presentation](/assets/images/regionalkonferenz.jpg){: style="display:block; margin-left:auto; margin-right:auto; max-width: 100%; max-height: 320;" }
 
 Beyond the content-rich sessions, the conference offered many opportunities for professional exchange. During breaks and exhibition visits, engaging conversations took place between representatives from research, industry, and public administration – a valuable contribution to networking and advancing sustainable mobility solutions.
 
