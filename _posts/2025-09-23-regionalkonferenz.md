@@ -11,7 +11,7 @@ Am 23. September 2025 fand die 8. Regionalkonferenz Mobilitätswende unter dem M
 
 Im Fachforum "Smarte Mobilität – KI und Daten als Treiber der Zukunft" hielt Richard Wacker von YellowMap einen vielbeachteten Vortrag, in dem er innovative Ansätze zur Nutzung von Daten und künstlicher Intelligenz für die Mobilitätsplanung präsentierte.
 
-![MobyDex Vortrag](/assets/images/regionalkonferenz.jpg){: height="320" style="display:block; margin-left:auto; margin-right:auto" }
+![MobyDex Vortrag](/assets/images/regionalkonferenz.jpg){: style="display:block; margin-left:auto; margin-right:auto; max-width: 100%; max-height: 320;" }
 
 Neben den inhaltlichen Impulsen bot die Konferenz auch zahlreiche Gelegenheiten für den fachlichen Austausch. In den Pausen und bei den Ausstellungsbesuchen entstanden interessante Gespräche zwischen Vertreter:innen aus Forschung, Wirtschaft und Verwaltung – ein wertvoller Beitrag zur Vernetzung und Weiterentwicklung nachhaltiger Mobilitätslösungen.
 
