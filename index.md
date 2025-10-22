@@ -82,8 +82,11 @@ layout: default
 
 <div class="text-container">
   <div id="video" class="section-heading">Einf&uuml;hrungsvideo</div>
-  <video class="content" style="max-width: 850px;" src="assets/videos/20251020-mobydex-subtitles-720p.mp4" type="video/mp4" controls>
-  </video>
+  <p class="content" style="max-width: 850px;">
+    <video src="assets/videos/20251020-mobydex-subtitles-720p.mp4" type="video/mp4" controls autoplay muted>
+      Your browser does not support the video tag.
+    </video>
+  </p>
 </div>
 
 <!--
