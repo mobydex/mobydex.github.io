@@ -76,6 +76,15 @@ layout: default
   </div>
 </div>
 
+<!--
+  Video
+-->
+
+<div class="text-container">
+  <div id="description" class="section-heading">Einf&uuml;hrungsvideo</div>
+  <video class="content" style="max-width: 850px;" src="assets/videos/20251020-mobydex-subtitles-720p.mp4" type="video/mp4" controls>
+  </video>
+</div>
 
 <!--
   Project Summary
