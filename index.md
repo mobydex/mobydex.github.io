@@ -77,19 +77,6 @@ layout: default
 </div>
 
 <!--
-  Video
--->
-
-<div class="text-container">
-  <div id="video" class="section-heading">Einf&uuml;hrungsvideo</div>
-  <p class="content">
-    <video style="width: 100%;" src="assets/videos/20251020-mobydex-subtitles-720p.mp4" type="video/mp4" controls autoplay muted>
-      Your browser does not support the video tag.
-    </video>
-  </p>
-</div>
-
-<!--
   Project Summary
 -->
 
@@ -103,6 +90,18 @@ Das System wird in den Zielregionen Ruhrgebiet und Baden-W&uuml;rttemberg erprob
   </p>
 </div>
 
+<!--
+  Video
+-->
+
+<div class="text-container">
+  <div id="video" class="section-heading">Einf&uuml;hrungsvideo</div>
+  <p class="content">
+    <video style="width: 100%;" src="assets/videos/20251020-mobydex-subtitles-720p.mp4" type="video/mp4" controls autoplay muted>
+      Your browser does not support the video tag.
+    </video>
+  </p>
+</div>
 
 <!--
   Information
