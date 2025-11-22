@@ -12,6 +12,7 @@ Vom 4. bis 6. November 2025 waren wir mit Moby Dex auf der Smart City Expo World
 Unsere Teilnahme war Teil unserer Aktivitäten im Rahmen der Förderung durch  den mFUND sowie das Bundesministerium für Digitales und  Staatsmodernisierung (BMDS). Die Expo bot für uns eine ideale  Gelegenheit, sowohl über unsere Arbeit zu informieren als auch den  aktuellen Stand unserer Forschung sichtbar zu machen.
 
 ![Unser Team am MobyDex Stand.](/assets/images/2025-scewc.jpg){: height="320" style="display:block; margin-left:auto; margin-right:auto" }
+*<small>Bildquelle: Bayern International</small>*
 
 Besonders  wichtig war für uns der direkte Austausch mit unserer Zielgruppe:  Planerinnen und Planern in der Verkehrsplanung. Wir wollten ihre Bedarfe und Perspektiven besser verstehen und unser Moby-Dex-Dashboard direkt  vor Ort evaluieren lassen. Das persönliche Feedback der Fachbesucher war für uns äußerst wertvoll: Viele bestätigten die Relevanz unserer  Ansätze und machten konkrete Vorschläge, die in die Weiterentwicklung  einfließen können.
 
