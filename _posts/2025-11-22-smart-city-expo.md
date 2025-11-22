@@ -7,7 +7,7 @@ excerpt: "Vom 4. bis 6. November 2025 waren wir mit Moby Dex auf der Smart City 
 icon: campaign
 ---
 
-![/assets/images/2025-scewc.jgp]
+![Unser Team am MobyDex Stand](/assets/images/2025-scewc.jpg){: height="320" style="display:block; margin-left:auto; margin-right:auto" }
 
 Vom 4. bis 6. November 2025 waren wir mit Moby Dex auf der Smart City Expo World Congress in Barcelona vertreten – einer der weltweit  wichtigsten Messen für urbane Innovation, Mobilität und Digitalisierung. Gemeinsam mit unterschiedlichen Partnern aus Deutschland präsentierten  wir uns am Gemeinschafts-Bayern-Stand und nutzten die internationale  Bühne, um unser Projekt einem breiten Messepublikum vorzustellen.
 
