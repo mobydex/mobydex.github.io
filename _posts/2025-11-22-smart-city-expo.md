@@ -11,12 +11,15 @@ Vom 4. bis 6. November 2025 waren wir mit Moby Dex auf der Smart City Expo World
 
 Unsere Teilnahme war Teil unserer Aktivitäten im Rahmen der Förderung durch  den mFUND sowie das Bundesministerium für Digitales und  Staatsmodernisierung (BMDS). Die Expo bot für uns eine ideale  Gelegenheit, sowohl über unsere Arbeit zu informieren als auch den  aktuellen Stand unserer Forschung sichtbar zu machen.
 
-![Unser Team am MobyDex Stand.](/assets/images/2025-scewc.jpg){: height="320" style="display:block; margin-left:auto; margin-right:auto" }
-*<small>Bildquelle: Bayern International</small>*
+![Unser Team am MobyDex Stand.](/assets/images/2025-scewc-img16.jpg){: height="320" style="display:block; margin-left:auto; margin-right:auto" }
 
 Besonders  wichtig war für uns der direkte Austausch mit unserer Zielgruppe:  Planerinnen und Planern in der Verkehrsplanung. Wir wollten ihre Bedarfe und Perspektiven besser verstehen und unser Moby-Dex-Dashboard direkt  vor Ort evaluieren lassen. Das persönliche Feedback der Fachbesucher war für uns äußerst wertvoll: Viele bestätigten die Relevanz unserer  Ansätze und machten konkrete Vorschläge, die in die Weiterentwicklung  einfließen können.
 
+![Richard Wacker beim Präsentieren von MobyDex.](/assets/images/2025-scewc-img28.jpg){: height="320" style="display:block; margin-left:auto; margin-right:auto" }
+
 Darüber hinaus konnten wir zahlreiche  zielgerichtete Gespräche führen und spannende neue Kontakte knüpfen –  sowohl mit kommunalen Vertreterinnen und Vertretern als auch mit  Forschungspartnern und Unternehmen, die sich mit datenbasierter  Mobilitätsplanung beschäftigen. Diese Impulse werden für uns in den  kommenden Projektphasen besonders wertvoll sein.
+
+![Svetlana Dedova beim Verteilen der MobyDex Flyer.](/assets/images/2025-scewc-img29.jpg){: height="320" style="display:block; margin-left:auto; margin-right:auto" }
 
 Unser Fazit: Die Teilnahme an der Smart City Expo 2025 war für Moby Dex ein großer  Erfolg. Der intensive Austausch hat uns darin bestärkt, digitale  Werkzeuge für die Mobilitätsplanung praxisnah zu entwickeln und im  Dialog mit der Fachwelt kontinuierlich zu verbessern. Wir nehmen viele  neue Ideen und Kontakte aus Barcelona mit und freuen uns auf die  nächsten Schritte im Projekt.
 
