@@ -7,5 +7,7 @@ excerpt: "Wir starten motiviert ins Jahr 2026!"
 icon: celebration
 ---
 
-Wir starten motiviert ins Jahr 2026! In den kommenden Monaten werden wir gemeinsam mit unseren Partnern die Plattform Moby Dex weiter ausbauen, neue Funktionen implementieren und die ersten Demonstratoren unter realen Bedingungen testen. Wir freuen uns auf spannende Fortschritte und Einblicke, die wir in diesem Jahr mit Ihnen teilen werden.
+Wir starten motiviert ins Jahr 2026!
+In den kommenden Monaten werden wir gemeinsam mit unseren Partnern die Plattform Moby Dex weiter ausbauen, neue Funktionen implementieren und die ersten Demonstratoren unter realen Bedingungen testen.
+Wir freuen uns auf spannende Fortschritte und Einblicke, die wir in diesem Jahr mit Ihnen teilen werden.
 
