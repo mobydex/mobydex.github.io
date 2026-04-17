@@ -7,6 +7,7 @@ Do **not** skip or rearrange steps — consistency is critical for Jekyll compat
 
 ## 🎯 Goal  
 Turn all files in `staging/` into live blog posts (`_posts/`) and copy associated asset files (`.png`, `pdf`, etc.) to `assets/images/`.
+Of course, don't publish the placeholder file staging/README.md!
 
 ---
 
