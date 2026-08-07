@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Moby Dex Projektabschluss"
-date: 2028-08-01 06:00:00 +0100
+date: 2026-08-01 06:00:00 +0100
 categories: news
 author: Marcus Handte
 excerpt: "Am 13. August findet die Abschlussveranstaltung in Karlsruhe statt."
