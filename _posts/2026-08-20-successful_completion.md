@@ -10,6 +10,8 @@ icon: celebration
 
 Mit einem gemeinsamen Abschlusstreffen bei der CAS Software AG in Karlsruhe haben die Projektpartner das Forschungs- und Entwicklungsprojekt Moby Dex erfolgreich beendet. Nach drei Jahren intensiver Zusammenarbeit bot die Veranstaltung Gelegenheit, die erreichten Ergebnisse zusammenzufassen, Erfahrungen aus den verschiedenen Arbeitspaketen auszutauschen und die Perspektiven für die weitere Nutzung der entwickelten Lösungen zu diskutieren.
 
+![Das MobyDex-Konsortium beim Abschlusstreffen in Karlsruhe.](/assets/images/20260813-group-photo.jpeg){: height="320" style="display:block; margin-left:auto; margin-right:auto" }
+
 Im Mittelpunkt des Treffens stand ein Rückblick auf die gemeinsame Projektarbeit. Die Projektpartner reflektierten die Entwicklung der MobyDex-Plattform, die Zusammenführung von Mobilitätsangebots- und Mobilitätsbedarfsdaten sowie die erzielten Fortschritte bei der Entwicklung datengetriebener Analyse- und Bewertungsverfahren. Dabei wurde deutlich, dass die enge Zusammenarbeit von Forschungseinrichtungen und Unternehmen eine wesentliche Grundlage für den Projekterfolg war.
 
 Die Veranstaltung diente zudem dazu, die im Projekt gewonnenen Erkenntnisse zu dokumentieren und die nächsten Schritte für die Verwertung und Weiterentwicklung der Ergebnisse abzustimmen. Besonderes Augenmerk lag auf den Möglichkeiten, die entwickelten Methoden und Plattformkomponenten künftig in weiteren Anwendungsfeldern der Mobilitätsplanung einzusetzen und bestehende Kooperationen fortzuführen. 
