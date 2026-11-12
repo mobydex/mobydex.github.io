@@ -12,7 +12,7 @@ From 22 to 25 September 2026, the research project MobyDex was presented as part
 
 Visitors had the opportunity to explore MobyDex and gain insights into the project's approach to data-driven mobility analysis. A highlight was the web-based MobyDex Global Analysis Tool, which enables the interactive visualization of mobility supply, mobility demand, and the various metrics of the MobyDex Mobility Index.
 
-![Moby Dex Project (Source: Federal Ministry of Transport)](/assets/images/mobydex-bmv.png){: style="display:block; margin-left:auto; margin-right:auto; max-height: 400px; max-width: 100%;" }
+![Moby Dex Project (Source: Federal Ministry of Transport)](/assets/images/mobydex-bmv.png){: style="display:block; margin-left:auto; margin-right:auto; max-height: 400px; max-width: 100%;" }<br /><div style="text-align: center;">_Moby Dex Project (Source: Federal Ministry of Transport)_</div>
 
 Using the Ruhr Metropolitan Region and the Karlsruhe Region as examples, the tool demonstrated how heterogeneous mobility data can be integrated and analyzed to support planning and decision-making processes. The application illustrates the potential of data-driven methods for improving the analysis and design of sustainable mobility systems.
 
